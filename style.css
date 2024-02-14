@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid black;
+    
        
 }
 
@@ -241,15 +241,15 @@ h1{
 
 .jafe{
     display: flex;
+    justify-content: space-around;
     position: relative;
-    gap: 15px;
+    /* gap: 15px; */
     margin-left: 4%;
 }
 
 .femme img{
     width: 200px;
     height: 200px;
-    object-fit: cover;
     
 }
 
@@ -326,11 +326,10 @@ h1{
 
 .avant-dernier{
     margin: 10%;
-    
     background-image: url(./image/pin.jpg);
     background-size: cover;
     object-fit:cover;
-    height: 150px;
+    height: 200px;
 
 }
 .avant-dernier{
