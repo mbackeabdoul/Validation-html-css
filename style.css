@@ -68,7 +68,7 @@ input {
     color: white;
 }
 .icone2 i{
-    font-size: 6px;
+    font-size: 5px;
 }
 .icone2 div {
     color: green;
@@ -84,9 +84,9 @@ input {
     /* border: 1px solid ; */
     display: flex;
     justify-content: flex-start;
-    gap: 5px;
+    gap: 7px;
     margin: 2%;
-    font-size: 10px;
+    font-size: 13px;
     padding-left:1%;
     color: rgb(80, 78, 78);
     background-color: aliceblue;
@@ -96,7 +96,7 @@ input {
 
 .icone3 div i{
     display: inline;
-    font-size:4px;
+    font-size:6px;
     color: black;
 }
 .icone3 p{
@@ -472,8 +472,14 @@ footer p{
 
 @media screen and (max-width: 700px){
 
-    .container{
-        /* width: 100%; */
+    /* *{
+        padding: 0;
+        margin: 0;
+    } */
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
     .nav1 {
     display: flex;
@@ -481,13 +487,24 @@ footer p{
     flex-direction: column;
     /* flex-wrap: wrap; */
 }
+  .icone2 div {
+    display: none;
+  }
 
-.nav1 .icone1 .icone2 .icone3{
-    display: flex;
-    flex-direction: column;
-    padding: 1%;
+    .icone1{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 
+.icone2 .green {
+    display: none;
 }
+  .icone2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
 .welcome{
     display: flex;
@@ -582,9 +599,11 @@ footer p{
     width: 100%;
    }
 
-   .footer .app{
+   .app{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    gap: 6px;
    }
 
    footer{
